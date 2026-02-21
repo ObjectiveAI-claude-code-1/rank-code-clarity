@@ -1,0 +1,7 @@
+{
+  "depth": 1,
+  "branchMinWidth": 2,
+  "branchMaxWidth": 2,
+  "leafMinWidth": 2,
+  "leafMaxWidth": 2
+}
