@@ -1,0 +1,10 @@
+[
+  {
+    "spec": "Evaluate and rank code snippets based on their semantic clarity. Semantic clarity means how effectively each snippet communicates what it does through the meaningfulness and clarity of its variable names, function names, and the logical organization of concepts. Assess each snippet for how immediately and unmistakably a reader can understand the purpose and intent of each component without needing to reverse-engineer or infer meaning from unclear naming. Consider the quality and expressiveness of naming conventions, whether names directly convey intent, how obviously the code's purpose is self-evident through its structure, and whether the logical organization mirrors the problem domain being solved.",
+    "token": "51a5604a-43fa-49d1-ad8d-6275f6cb0ccd"
+  },
+  {
+    "spec": "Evaluate and rank code snippets based on their structural clarity. Structural clarity means how effectively each snippet reveals its execution path and logical flow, making it immediately obvious how the code works from input to output. Assess each snippet for the straightforwardness of its control flow, whether it follows recognizable and conventional patterns that experienced developers would recognize, and how simple and direct the path from input to output is presented. Consider whether the code uses deep nesting or early returns, if error conditions are handled predictably and consistently, whether loops and conditionals are immediately comprehensible, and whether the code is organized in a way that makes the sequence of operations obvious.",
+    "token": "820f9768-be9d-40fb-9c4d-b4a2af03a046"
+  }
+]

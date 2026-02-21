@@ -1,0 +1,3 @@
+Evaluate Semantic Clarity: Assess how effectively each code snippet communicates what it does through the choice and meaningfulness of variable names, function names, and the logical organization of concepts. Determine how quickly a reader can understand the purpose and intent of each component without needing to reverse-engineer or infer meaning from unclear naming or implicit logic.
+
+Evaluate Structural Clarity: Assess how effectively each code snippet reveals its execution path and logical flow, examining whether the control flow is straightforward and easy to follow, whether the code follows recognizable patterns and conventions, and whether the journey from input to output is presented simply and directly without unnecessary complexity or deep nesting.

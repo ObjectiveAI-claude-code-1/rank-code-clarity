@@ -1,0 +1,80 @@
+{
+  "type": "vector.function",
+  "input_schema": {
+    "type": "array",
+    "description": "An array of code snippets to rank by clarity",
+    "minItems": 2,
+    "items": {
+      "type": "string",
+      "description": "A code snippet to evaluate for clarity"
+    }
+  },
+  "output_length": {
+    "$starlark": "len(input)"
+  },
+  "input_split": {
+    "$starlark": "[[snippet] for snippet in input]"
+  },
+  "input_merge": {
+    "$starlark": "[snippet[0] for snippet in input]"
+  },
+  "tasks": [
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "An array of code snippets to rank by semantic clarity",
+        "minItems": 2,
+        "items": {
+          "type": "string",
+          "description": "A code snippet to evaluate"
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[code] for code in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item[0] for item in input]"
+      },
+      "skip": null,
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    },
+    {
+      "type": "placeholder.vector.function",
+      "input_schema": {
+        "type": "array",
+        "description": "An array of code snippets to rank by structural clarity",
+        "minItems": 2,
+        "items": {
+          "type": "string",
+          "description": "A code snippet to evaluate"
+        }
+      },
+      "output_length": {
+        "$starlark": "len(input)"
+      },
+      "input_split": {
+        "$starlark": "[[code] for code in input]"
+      },
+      "input_merge": {
+        "$starlark": "[item[0] for item in input]"
+      },
+      "skip": null,
+      "input": {
+        "$starlark": "input"
+      },
+      "output": {
+        "$starlark": "output"
+      }
+    }
+  ],
+  "description": "rank-code-clarity ranks code snippets from clearest to least clear by evaluating semantic clarity (meaningful naming and organization) and structural clarity (logical flow and patterns). It helps developers select the most comprehensible implementations for better code maintenance, refactoring, and team-wide clarity standards."
+}
