@@ -85,8 +85,8 @@ As codebases evolve, `rank-code-clarity` can identify sections of code that have
 
 `rank-code-clarity` accomplishes its evaluation through two complementary sub-functions:
 
-- **[{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})**: Evaluates semantic clarity by analyzing naming conventions, organization, and how obviously intent is communicated
-- **[{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})**: Evaluates structural clarity by analyzing control flow, patterns, and simplicity of execution
+- **[evaluate-code-clarity](https://github.com/ObjectiveAI-claude-code-1/evaluate-code-clarity)**: Evaluates semantic clarity by analyzing naming conventions, organization, and how obviously intent is communicated
+- **[execute-task](https://github.com/ObjectiveAI-claude-code-1/execute-task)**: Evaluates structural clarity by analyzing control flow, patterns, and simplicity of execution
 
 Each sub-function independently ranks the code snippets, and the results are combined to produce a final clarity ranking that reflects both what the code communicates and how effectively it communicates it.
 
